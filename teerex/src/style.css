@@ -1,0 +1,359 @@
+/* Navbar */
+
+.navbar{
+    display: flex;
+    background-color: #f1f0f0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.navbar > a{
+    text-decoration: none;
+}
+.rightIcon{
+    font-size: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+#cartIcon{
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.cartCount{
+    font-size: 14px;
+    position: relative;
+    bottom:20px;
+}
+
+/* Search Box */
+
+.searchBox{
+    width: 50%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: 20%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+ input{
+    width: 60%;
+    height: 30px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #979292;
+    color: #5d5b5b;
+    font-size: 16px;
+    outline: none;
+}   
+
+ .searchIconBox{
+    width: 50px;
+    height: 30px;
+    margin-right: auto;
+    margin-left: 5px;
+    background-color: #979292;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+.searchIconBox>i{
+    color: white;
+     font-weight: 100;
+} 
+
+.searchIconBox:hover{
+    box-shadow: 2px 2px 4px 5px rgba(120, 115, 115, 0.1);
+    background-color: #787474;
+} 
+
+
+/* Filter Box */
+
+.filterBox{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(147, 143, 143, 0.05) 0px 0px 0px 1px inset;
+    width: 30%;
+    height: auto;
+    float: left;
+}
+
+.checkBox{
+    width: 50%;
+    height: auto;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.checkBox > .check{
+    width: 70%;
+    text-align: center;
+    position: relative;
+    /* margin-bottom: 7px; */
+}
+.checkBox>h4{
+    text-align: left;
+    font-size: 20px;
+    padding-left: -20px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    font-weight: 500; 
+}
+.check > label{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 6px;
+    position: absolute;
+}
+.check > input{
+    width: 18px;
+    height: 18px;
+    margin-left: -85px;
+    background-color: #979292;
+    cursor: pointer;
+}
+
+/* Products */
+
+.products{
+     width: 65%;
+     height: 500px;
+     overflow: hidden;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap: 10px;
+     padding: 10px;
+     overflow: auto;
+     -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  /* Firefox */
+}
+.products::-webkit-scrollbar {
+    display: none;
+  }
+
+
+/* Card */
+
+.product_card{
+    width: 220px;
+    height: 215px;
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.product_card > img{
+    width: 100%;
+    height: 140px;
+    margin-top: 20px;
+}
+.product_card > .item_details{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.product_card > .product_title{
+    position: absolute;
+    left: 5%;
+    font-family: sans-serif;
+    margin-top: 4px;
+    color: #08345b;
+}
+.item_details > button{
+    width: 40%;
+    height: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.item_details > p{
+    font-weight: bold;
+}
+
+/* Cart */
+
+
+.cart_main{
+    width: 100%;
+    height: 500px;
+}
+
+.cart_content{
+    width: 50%;
+    height: 90%;
+    box-shadow: rgba(101, 99, 99, 0.16) 0px 1px 4px; 
+    margin-left: 12%;
+    padding: 10px;
+    overflow: auto;
+     -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  /* Firefox */
+
+}
+.cart_content::-webkit-scrollbar {
+    display: none;
+  }
+.cart_content > .cart_content_main{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    border-bottom: 1px solid rgb(198, 193, 193);
+    margin-bottom: 25px;
+}
+.cartMain>img{
+    width:25%;
+    height: 100%;
+}
+.cartMain >.priceBox{
+    width: 25%;
+    height: 50px;
+    margin-top: 10px;
+}
+.priceBox > p{
+    font-size: 18px;
+}
+.button_box{
+    width: 40%;
+    height: 70px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 15px;
+  }
+
+  .smallBtn{
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    height: 28px;
+    padding: 2px 7px;
+  }
+  .smallBtn>button{
+    background: transparent ;
+    border-color: #f0e0e0ae;
+  }
+  .smallBtn>button:hover{
+    background: rgba(202, 199, 199, 0.758);
+  }
+
+.button_box > button{
+    width: 130px;
+    height: 40px;
+    background:transparent;
+    border-radius: 7px;
+    border:1px solid rgb(98, 96, 96);
+}
+.button_box > button:hover{
+    background: rgba(203, 197, 197, 0.902);
+}
+button{
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 600px) {
+    .products{
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 25px;
+   }
+   .check > input{
+  margin-left: -70%;
+   }
+   .check > label{
+    font-size: 11px;
+   }
+   .checkBox{
+    width: 100%;
+   }
+   .checkBox>h4{
+    font-size: 15px;
+   }
+   .searchBox{
+    width:  50%;
+   }
+   .cart_main{
+    width: 100%;
+   }
+  .cart_content{
+    width: 100%;
+    margin: 0px;
+   }
+   .button_box > button{
+    width: 60px;
+    height: 30px;
+    margin-top: 8px;
+}
+.smallBtn{
+    margin-top: 6px;
+}
+.smallBtn > button{
+    width: 40px;
+    height: 30px;
+    font-size: 19px;
+    margin-top: 3px;
+}
+
+.priceBox >h4{
+    font-size: 15px;
+}
+
+
+.loaderImg{
+    width: 100%;
+}
+  }
+
+
+  @media only screen and (min-width: 600px) and (max-width:992px) {
+    .products{
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 25px;
+   }
+   .check > input{
+     margin-left: -70%;
+   }
+   .check > label{
+    font-size: 15px;
+   }
+   .checkBox{
+    width: 100%;
+   }
+   .checkBox>h4{
+    font-size: 19px;
+   }
+  } 
+
+  
+  @media only screen and (max-width: 900px){
+    .cart_content{
+        width: 90%;
+        margin-left: 10px;
+    }
+  }
+  @media only screen and (max-width: 1100px){
+    .cart_content{
+        width: 80%;
+        margin-left: 30px;
+    }
+  }
+  @media only screen and (max-width: 650px){
+    .button_box{
+       display: flex;
+       flex-direction: column;
+    }
+  }
+
